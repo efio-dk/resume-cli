@@ -1,5 +1,6 @@
 ## Setup / Install
-run `git clone https://github.com/efio-dk/resume-cli.git` 
+run `git clone https://github.com/efio-dk/resume-cli.git`
+
 run `npm link`
 
 ## Usage
