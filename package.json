@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/efio-dk/resume-cli#readme",
   "dependencies": {
-    "commander": "^6.0.0"
+    "commander": "^6.0.0",
+    "z-schema": "^4.2.3"
   }
 }

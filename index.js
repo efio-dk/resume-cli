@@ -12,8 +12,10 @@ commander
 commander
     .command("validate")
     .description("validate a json file against a json schema")
-    .action((args, options) => {
-        require("./actions/validate")(args, options);
+    .option("--resume <relativePath>", "relative path to the resume.json file", "resume.json")
+    .option("--schema <relativePath>", "relative path to the schema.json file", "schema.json")
+    .action((options) => {
+        require("./actions/validate")(options.resume, options.schema);
     });
 
 commander.parse(process.argv);
