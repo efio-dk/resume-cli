@@ -5,8 +5,10 @@ const commander = require("commander");
 commander
     .command("generate")
     .description("generate a html file based on a resume.json file")
-    .action((args, options) => {
-        require("./actions/generate")(args, options);
+    .option("--resume <relativePath>", "relative path to a resume json file", "resume.json")
+    .option("--template <relativePath>", "relative path to a handlebars template folder", "template")
+    .action((options) => {
+        require("./actions/generate")(options.resume, options.template);
     })
 
 commander.parse(process.argv);

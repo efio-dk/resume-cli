@@ -1,3 +1,3 @@
-module.exports = (args, options) => {
-
+module.exports = (resumeRelativePath, templateRelativePath) => {
+    
 }
