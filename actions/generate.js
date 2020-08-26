@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-module.exports = (resumeRelativePath, templateRelativePath) => {
+module.exports = (resumeRelativePath, templateRelativePath, outputRelativePath) => {
     var resumePath, resumeData, resumeJSONObject = undefined;
     try {
         resumePath = path.join(process.cwd(), resumeRelativePath);
@@ -31,7 +31,7 @@ module.exports = (resumeRelativePath, templateRelativePath) => {
 
     
     const htmlContent = templatePackage.render(resumeJSONObject);
-    const writeStream = fs.createWriteStream(path.resolve(process.cwd(), "output.html"));
+    const writeStream = fs.createWriteStream(path.resolve(process.cwd(), outputRelativePath));
     writeStream.write(htmlContent, (error) => {
         writeStream.close();
     });
