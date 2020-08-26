@@ -1,7 +1,6 @@
 const path = require("path");
 const fs = require("fs");
 const ZSchema = require("z-schema");
-const { ENOENT } = require("constants");
 const validator = new ZSchema();
 
 module.exports = (resumeRelativePath, schemaRelativePath) => {
@@ -19,7 +18,7 @@ module.exports = (resumeRelativePath, schemaRelativePath) => {
     }
     if(resumeJSONObject === undefined) { console.log("resume cannot be empty"); process.exit(1); }
 
-    
+
     var schemaPath, schemaData, schemaJSONObject = undefined;
     try {
         schemaPath = path.join(process.cwd(), schemaRelativePath);
