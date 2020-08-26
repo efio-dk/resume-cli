@@ -9,4 +9,11 @@ commander
         require("./actions/generate")(args, options);
     })
 
+commander
+    .command("validate")
+    .description("validate a json file against a json schema")
+    .action((args, options) => {
+        require("./actions/validate")(args, options);
+    });
+
 commander.parse(process.argv);
