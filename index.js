@@ -21,4 +21,11 @@ commander
         require("./actions/validate")(options.resume, options.schema);
     });
 
+commander
+    .command("test <partial>")
+    .description("test the docx generation")
+    .action((partialName) => {
+        require("./docx-theme")(partialName);
+    });
+
 commander.parse(process.argv);
