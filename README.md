@@ -17,6 +17,13 @@ add a javascript file to `resume-cli\docx-theme\partials`
 add a entry to the `resume-cli\docx-theme\partials\index.js` with the newly created javascript file to export it
 
 ```javascript
+module.exports = {
+    fileName: require("./fileName"),
+}
+```
+
+add the following snippet and populate the document
+```javascript
 const docx = require("docx")
 
 module.exports = () => {
