@@ -181,7 +181,7 @@ module.exports = () => {
                         children: 
                         [
                             new TextRun({
-                                text: Element["area"] + Element["studyType"],
+                                text: Element["area"] + " " + Element["studyType"],
                                 size: 22,
                                 font: "calibri"
                             })
