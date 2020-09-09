@@ -1,0 +1,485 @@
+{
+    "basics": {
+      "name": "Kristian Østergaard Martensen",
+      "label": "Programmer",
+      "picture": "https://www.efio.dk/images/team/kristian.jpg",
+      "born": "1984",
+      "resume-version": "v2020.02",
+      "it-experience": "14",
+      "email": "kristian@efio.dk",
+      "phone": "+45 5376 7138",
+      "website": "https://efio.dk",
+      "summary": "Senior DevOps Consultant at Efio.\nKristian has worked as a full-time professional in software development since 2007, of which\nthe latest 5 years have been focused on DevOps-enabling technologies.\nKristian helps his clients build a strong DevOps culture in their organizations, building\ndocumented and self-documenting systems, as well as instructing both developers and\noperations, in the principles of automation done right.\nKristian started his career as a backend software developer, however always with a strong\nfocus on difficult subjects involving database performance. This led him to work exclusively\nas an expert on relational and NoSQL databases for a number of years.\nToday Kristian calls himself a site reliability engineer, specializing in keeping large sites\navailable and performant. However, not forgetting his roots, still loving to setup and tweak\ndistributed data stores. And not least, make all systems a bliss for developers to work with\nand deploy to.",
+      "title": "Senior DevOps Engineer and container specialist",
+      "header": "'s area of expertise covers",
+      "area-expertise": [
+        "Containerization and container orchestration: Docker Swarm and Kubernetes",
+        "Distributed data stores: Kafka, Cassandra, Elasticsearch, MongoDB",
+        "Public cloud architecture: AWS, GCP, Azure",
+        "Systems performance tuning: GNU/Linux, Network, Databases, File systems"
+      ],
+      "location": {
+        "address": "Kongensgade 6b",
+        "postalCode": "5000",
+        "city": "Odense C",
+        "countryCode": "DK"
+      },
+      "profiles": [
+        {
+          "network": "linkedin",
+          "username": "nanohest",
+          "url": ""
+        },
+        {
+          "network": "SoundCloud",
+          "username": "dandymusicnl",
+          "url": "https://soundcloud.com/dandymusicnl"
+        }
+      ],
+      "languages": [
+        {
+          "language": "Danish",
+          "fluency": "Native speaker"
+        },
+        {
+          "language": "English",
+          "fluency": "Fluent"
+        }
+      ],
+      "company-details": {
+        "picture": "https://efio.dk/images/efio-nav-logo-wide.png",
+        "address": "Kronprinsensgade 6B",
+        "zipcode": "DK-1114",
+        "city": "Copenhagen",
+        "cvr": "38578251",
+        "email": "cv@efio.dk",
+        "phonenumber": "+45 71743040"
+      }
+    },
+    "work": [
+      {
+        "company": "Schneider Electric IT Denmark A/S",
+        "position": "Senior DevOps Consultant",
+        "projects": [
+          {
+            "startDate": "2019-11-01",
+            "endDate": "2020-12-31",
+            "headline": "Data center management and monitoring",
+            "summary": "The Ecostruxure project provides planning, management and monitoring capabilities to the world’s largest data centers. The platform receives and processes more than a billion measurements from data center equipment each day, providing realtime insights on data center health to clients.",
+            "highlights": [
+              "Introducing infrastructure as code with Terraform",
+              "Implementing GitOps through ArgoCD",
+              "Implementing multi region cluster setups in Azure"
+            ],
+            "tools": [
+              "Terraform",
+              "Ansible",
+              "Azure",
+              "Kubernetes",
+              "Helm",
+              "ArgoCD",
+              "Jenkins",
+              "Auth0",
+              "Okta",
+              "Elasticsearch",
+              "Kafka",
+              "Zookeeper",
+              "Fluent-bit",
+              "Docker",
+              "Packer",
+              "Prometheus"
+            ],
+            "roles": [
+              "DevOps engineer", "Site reliability engineer"
+            ]
+          }
+        ]
+      },
+      {
+        "company": "The Danish IT and Development Agency (UFST)",
+        "position": "Senior DevOps Consultant",
+        "projects": [
+          {
+            "startDate": "2019-11-01",
+            "endDate": "2020-12-31",
+            "headline": "Real estate property valuation",
+            "summary": "The ICE program is implementing real estate property valuation, based on highly complex statistical models. The program will give Danish homeowners an accurate and fair valuation of their properties. On top of the statistical models, the program consists of several applications supporting case workers and property owners.",
+            "highlights": [
+              "Primary responsible of performance and availability of public facing application",
+              "Introduction of Kubernetes",
+              "Refactoring of Terraform codebase",
+              "Training of unexperienced engineers",
+              "Finding and implementation of cost reductions",
+              "Performance testing and implementation of performance improvements"
+            ],
+            "tools": [
+              "Terraform",
+              "Ansible",
+              "Azure",
+              "Kubernetes",
+              "Helm",
+              "ArgoCD",
+              "Jenkins",
+              "Auth0",
+              "Okta",
+              "Elasticsearch",
+              "Kafka",
+              "Zookeeper",
+              "Fluent-bit",
+              "Docker",
+              "Packer",
+              "Prometheus"
+            ],
+            "roles": [
+              "DevOps engineer", "Site reliability engineer"
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Linkfire",
+        "position": "Senior DevOps Consultant",
+        "projects": [
+          {
+            "startDate": "2018-01-01",
+            "endDate": "2018-10-31",
+            "headline": "Core infrastructure reimplementation",
+            "summary": "Redeployment of Linkfires most business and performance critical application, serving several million users every day, on entirely new infrastructure. Leading to significantly shorter and safer deployment cycles, and improved performance. Great attention has been paid to the ability, to thoroughly test and performance test the application, as well as making sure every bit of the setup, is described in the source code repository.",
+            "highlights": [
+              "Described entire infrastructure as code",
+              "Improved performance",
+              "Enables developers to deploy several times a day",
+              "Containerized application with Docker",
+              "Improved observability"
+            ],
+            "tools": [
+              "Terraform",
+              "Terragrunt",
+              "Packer",
+              "Ansible",
+              "Docker",
+              "Docker-compose",
+              "Nginx",
+              "HAProxy",
+              "Amazon Linux 2",
+              "SH",
+              "K6",
+              "Teamcity",
+              "AWS: EC2, ALB, IAM, Cloudwatch, Cloudwatch logs, S3, ECR"
+            ],
+            "roles": [
+              "DevOps engineer", "Site reliability engineer", "Cloud architect"
+            ]
+          },
+          {
+            "startDate": "2016-09-01",
+            "endDate": "2018-10-31",
+            "headline": "Reimplementation of data pipeline",
+            "summary": "Having evolved from tracking a few thousand clicks per day, to several millions, Linkfires SQL Server data warehouse, was no longer nearly able to stand the distance. Entire data pipeline was reimplemented from scratch, in a well thought out mix of technologies, providing the desired needs for performance, durability and",
+            "highlights": [
+              "Introduced horisontal scalability",
+              "Removed single points of failure",
+              "Easily upgradeable infrastructure",
+              "Immutable infrastructure"
+            ],
+            "tools": [
+              "Kafka",
+              "Cassandra",
+              "Druid",
+              "AWS S3",
+              "Terraform",
+              "Ansible",
+              "Docker Swarm",
+              "Ubuntu server",
+              "AWS: EC2",
+              "ALB",
+              "IAM",
+              "Cloudwatch",
+              "Cloudwatch logs",
+              "ECR",
+              "SQS"
+            ],
+            "roles": [
+              "DevOps engineer", "Site reliability engineer", "Cloud architect"
+            ]
+          }
+        ]
+      }
+    ],
+    "education": {
+        "educations-and-courses": [
+          {
+            "institution": "Lyngby Uddannelses Center",
+            "area": "Computer science",
+            "studyType": "Associate degree (Datamatiker)",
+            "startDate": "2007-05-01",
+            "endDate": "2011-06-01",
+            "gpa": "10.2"
+          },
+          {
+            "institution": "IBM",
+            "area": "DB2 PureXML",
+            "studyType": "Mastery test",
+            "startDate": "2010-06-01",
+            "endDate": "2010-06-02"
+          },
+          {
+            "institution": "Technical University of Denmark",
+            "area": "DTU Mainframe",
+            "studyType": "course",
+            "startDate": "2010-02-01",
+            "endDate": "2010-06-30"
+          },
+          {
+            "institution": "Pearson Vue",
+            "area": "Certified Oracle Linux",
+            "studyType": "implementaion specialist",
+            "startDate": "2014-06-01",
+            "endDate": "2014-06-30"
+          },
+          {
+            "institution": "Amazon Web Services",
+            "area": "AWS technical professional",
+            "studyType": "Accreditation",
+            "startDate": "2014-06-01",
+            "endDate": "2014-06-30"
+          },
+          {
+            "institution": "MongoDB",
+            "area": "MongoDB for DBAs",
+            "studyType": "(m102)",
+            "startDate": "2015-04-01",
+            "endDate": "2015-04-30"
+          }
+        ],
+        "conferences": [
+          {
+            "title": "SemTechBiz",
+            "date": "2013-05-01",
+            "location": "San Francisco"
+          },
+          {
+            "title": "Oracle Open World",
+            "date": "2014-05-01",
+            "location": "San Francisco"
+          },
+          {
+            "title": "AWS Summit",
+            "date": "2014-08-01",
+            "location": "Stockholm"
+          },
+          {
+            "title": "RedHat Forum",
+            "date": "2016-09-01",
+            "location": "Copenhagen"
+          },
+          {
+            "title": "AWS developer day",
+            "date": "2018-09-01",
+            "location": "Copenhagen"
+          },
+          {
+            "title": "GOTO;",
+            "date": "2018-11-15",
+            "location": "Copenhagen"
+          },
+          {
+            "title": "AWS Summit",
+            "date": "2019-08-01",
+            "location": "Stockholm"
+          }
+        ]
+      },
+    "skills": {
+      "technical-skills": [
+        {
+          "group-name": "Containers, hypervisors & virtualisation",
+          "technologies": [
+            {
+              "name": "Docker",
+              "level": "5",
+              "years": "5",
+              "last-used": "2020"
+            },
+            {
+              "name": "Docker Swarm",
+              "level": "5",
+              "years": "3",
+              "last-used": "2019"
+            },
+            {
+              "name": "Kubernetes",
+              "level": "4",
+              "years": "3",
+              "last-used": "2020"
+            },
+            {
+              "name": "LibPod / Podman",
+              "level": "1",
+              "years": "1",
+              "last-used": "2019"
+            },
+            {
+              "name": "LXC",
+              "level": "1",
+              "years": "1",
+              "last-used": "2014"
+            },
+            {
+              "name": "Solaris Zones",
+              "level": "1",
+              "years": "1",
+              "last-used": "2014"
+            },
+            {
+              "name": "XEN",
+              "level": "3",
+              "years": "3",
+              "last-used": "2014"
+            },
+            {
+              "name": "Qemu/KVM",
+              "level": "3",
+              "years": "2",
+              "last-used": "2014"
+            },
+            {
+              "name": "Oracle VM",
+              "level": "3",
+              "years": "3",
+              "last-used": "2014"
+            }
+          ]
+        },
+        {
+          "group-name": "Distributed data stores & relational databases",
+          "technologies": [
+            {
+              "name": "Docker",
+              "level": "5",
+              "years": "5",
+              "last-used": "2020"
+            },
+            {
+              "name": "Docker Swarm",
+              "level": "5",
+              "years": "3",
+              "last-used": "2019"
+            },
+            {
+              "name": "Kubernetes",
+              "level": "4",
+              "years": "3",
+              "last-used": "2020"
+            }
+          ]
+        }
+      ],
+      "working-areas": [
+        {
+          "name": "Application containerization",
+          "level": 5,
+          "years": 5,
+          "last-used": 2020
+        },
+        {
+          "name": "Container orchestration",
+          "level": 5,
+          "years": 4,
+          "last-used": 2020
+        },
+        {
+          "name": "Continuous software delivery (CI/CD)",
+          "level": 4,
+          "years": 5,
+          "last-used": 2020
+        },
+        {
+          "name": "DevOps",
+          "level": 5,
+          "years": 5,
+          "last-used": 2020
+        },
+        {
+          "name": "Distributed data store operations",
+          "level": 5,
+          "years": 7,
+          "last-used": 2020
+        },
+        {
+          "name": "Finance and insurance",
+          "level": 1,
+          "years": 1,
+          "last-used": 2014
+        },
+        {
+          "name": "Internet",
+          "level": 5,
+          "years": 7,
+          "last-used": 2020
+        },
+        {
+          "name": "Marketing",
+          "level": 2,
+          "years": 2,
+          "last-used": 2019
+        },
+        {
+          "name": "Public Cloud architecture",
+          "level": 4,
+          "years": 5,
+          "last-used": 2020
+        },
+        {
+          "name": "Public Cloud operations",
+          "level": 5,
+          "years": 5,
+          "last-used": 2020
+        },
+        {
+          "name": "Public sector",
+          "level": 3,
+          "years": 7,
+          "last-used": 2019
+        },
+        {
+          "name": "Relational Database operations",
+          "level": 5,
+          "years": 10,
+          "last-used": 2020
+        },
+        {
+          "name": "Retail",
+          "level": 3,
+          "years": 3,
+          "last-used": 2016
+        },
+        {
+          "name": "Site reliability",
+          "level": 5,
+          "years": 7,
+          "last-used": 2020
+        },
+        {
+          "name": "Software",
+          "level": 5,
+          "years": 12,
+          "last-used": 2020
+        },
+        {
+          "name": "Software tool development",
+          "level": 4,
+          "years": 12,
+          "last-used": 2019
+        },
+        {
+          "name": "Startup",
+          "level": 5,
+          "years": 5,
+          "last-used": 2019
+        }
+      ]
+    }
+  }
+  
+  
