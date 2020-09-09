@@ -1,6 +1,6 @@
 const docx = require("docx")
 const fs = require("fs");
-const { TextRun, TableRow, TableCell, Paragraph, HeadingLevel, Document, Table, BorderStyle, VerticalAlign, WidthType } = require("docx");
+const { TextRun, TableRow, TableCell, Paragraph, HeadingLevel, Document, Table, BorderStyle, VerticalAlign, WidthType, TableRowHeight, TableRowHeightAttribute, HeightRule} = require("docx");
 const { conferencesAndSeminars } = require(".");
 const json = JSON.parse(fs.readFileSync("resume.json"))
 
@@ -32,28 +32,60 @@ module.exports = () => {
         text: "Conferences and Seminars",
         heading: HeadingLevel.HEADING_2,
     });
-    const tableCell1 = new TableCell({
-         borders:
+    const emptyCell = new TableCell({
+        borders:
          {
             bottom:
             {
-                style: BorderStyle.OUTSET,
-                size: 60,
-                color: "red"
+                color: "white"
             },
             top:
             {
-                size: 0,
                 color: "white"
             },
             left:
             {
-                size: 0,
                 color: "white"
             },
             right:
             {
-                size: 0,
+                color: "white"   
+            }
+         },
+        children:
+        [
+            new Paragraph
+            ({
+                children: 
+                [
+                    new TextRun({
+                        text: " ",
+                        size: 10,
+                        font: "calibri"
+                    })
+                ]
+            }),
+        ],
+        width: {size: 15, type: WidthType.PERCENTAGE}
+         
+    })
+    const redBarCell = new TableCell({
+         borders:
+         {
+            bottom:
+            {
+                color: "white"
+            },
+            top:
+            {
+                color: "white"
+            },
+            left:
+            {
+                color: "white"
+            },
+            right:
+            {
                 color: "white"   
             }
          },
@@ -61,31 +93,67 @@ module.exports = () => {
          [
             new Paragraph(""),
          ],
-         width: {size: 12, type: WidthType.PERCENTAGE}
+         width: {size: 15, type: WidthType.PERCENTAGE}
          
+         
+    });
+    const headerCell = new TableCell({
+        borders:
+        {
+           bottom:
+           {
+               color: "white"
+           },
+           top:
+           {
+               color: "white"
+           },
+           left:
+           {
+               color: "white"
+           },
+           right:
+           {
+               color: "white"   
+           }
+        },
+        children:
+        [
+           header
+        ],
+        width: {size: 85, type: WidthType.PERCENTAGE}
+        
     });
     const table = new Table
     ({
-        rows:
-        [
-            new TableRow
-            ({
-                children: 
-                [
-                    tableCell1,
-                ],
-            }),
-            getTitles()
-        ],
-            
+        rows: getTitles(),
+        
+        width: {
+        size: 100,
+        type: WidthType.PERCENTAGE,
+        }
     });
-
     function getTitles()
     {
         var arr = []
+        const redBar = new TableRow({
+            children:[
+                redBarCell,
+                headerCell
+            ]
+            
+        })
+        const emptyRow = new TableRow({
+            children:[
+                emptyCell,
+                emptyCell  
+            ],
+        })
+        arr.push(redBar);
+        arr.push(emptyRow);
         json.education["conferences"].forEach(Element => 
         {
-            var tableCell2 = new TableCell
+            var titleAndLocationCell = new TableCell
             ({
                 borders:
                 {
@@ -110,11 +178,19 @@ module.exports = () => {
                 [
                     new Paragraph
                     ({
-                        text: Element["title"] + Element["location"],
+                        children: 
+                        [
+                            new TextRun({
+                                text: Element["title"] + Element["location"],
+                                size: 22,
+                                font: "calibri"
+                            })
+                        ]
                     }),
                 ],
+                width: {size: 85, type: WidthType.PERCENTAGE}
             })
-            var tableCell3 = new TableCell
+            var dateCell = new TableCell
             ({
                 borders:
                 {
@@ -139,21 +215,29 @@ module.exports = () => {
                 [
                     new Paragraph
                     ({
-                        text: Element["date"],
+                        children: 
+                        [
+                            new TextRun({
+                                text: Element["date"],
+                                size: 22,
+                                font: "calibri"
+                            })
+                        ]
                     }),
+                    
                 ],
+                width: {size: 15, type: WidthType.PERCENTAGE}
                 
             })
            var tableRow = new TableRow
            ({
                children:
                [
-                    tableCell2,
-                    tableCell3
+                    dateCell,
+                    titleAndLocationCell
                ]
             
             });
-            console.log(tableRow)
             arr.push(tableRow)
         });
         return arr
@@ -163,9 +247,7 @@ module.exports = () => {
     ({
         children:
         [
-            header,
             table,
-
         ]
     })
 
