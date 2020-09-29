@@ -1,31 +1,43 @@
 #!/usr/bin/env node
+const process = require("process");
+const cmd = require("commander");
+const actions = require("./actions");
 
-const commander = require("commander");
 
-commander
-    .command("generate")
-    .description("generate a html file based on a resume.json file")
-    .option("--resume <relativePath>", "relative path to a resume json file", "resume.json")
-    .option("--template <relativePath>", "relative path to a handlebars template folder", "template")
-    .option("--output <relativePath>", "relative path for output, with filename", "output.html")
-    .action((options) => {
-        require("./actions/generate")(options.resume, options.template, options.output);
-    })
+// ENTRY POINT
+cmd
+    .name("efio-cli")
+    .usage("<command> [options]");
 
-commander
+
+// COMMAND: validate
+cmd
     .command("validate")
-    .description("validate a json file against a json schema")
-    .option("--resume <relativePath>", "relative path to the resume.json file", "resume.json")
-    .option("--schema <relativePath>", "relative path to the schema.json file", "schema.json")
+    .description("validate a resume json file - Returns { 0 } on success")
+    .option("--resume <relativePath>", "path to resume json file", "resume.json")
+    .option("--schema <relativePath>", "path to the schema json file to validate against", "schema.json")
     .action((options) => {
-        require("./actions/validate")(options.resume, options.schema);
+        actions.validate(options.resume, options.schema);
     });
 
-commander
-    .command("test <partial>")
-    .description("test the docx generation")
-    .action((partialName) => {
-        require("./docx-theme")(partialName);
+
+// COMMAND: generate
+cmd
+    .command("generate")
+    .description("generate a resume in the docx format")
+    .option("--resume <relativePath>", "path to resume json file", "docx-theme/resume.json")
+    .option("--template <relativePath>", "path to the desired docx template", "docx-theme/template.docx")
+    .option("--destination <relativePath>", "path to the desired output location", "output.docx")
+    .action((options) => {
+        actions.generate(options.resume, options.template, options.destination);
     });
 
-commander.parse(process.argv);
+
+
+// EXPOSE PROCESS ARGUEMENTS FOR THE COMMANDER MODULE
+cmd.parse(process.argv);
+
+// DEFAULT TO HELP IF NOTHING IS SPECIFIED
+if(process.argv.length < 3){
+    cmd.help();
+}

@@ -296,54 +296,63 @@
           "group-name": "Containers, hypervisors & virtualisation",
           "technologies": [
             {
+              "group-name": "Containers, hypervisors & virtualisation",
               "name": "Docker",
               "level": "5",
               "years": "5",
               "last-used": "2020"
             },
             {
+              "group-name": "Containers, hypervisors & virtualisation",
               "name": "Docker Swarm",
               "level": "5",
               "years": "3",
               "last-used": "2019"
             },
             {
+              "group-name": "Containers, hypervisors & virtualisation",
               "name": "Kubernetes",
               "level": "4",
               "years": "3",
               "last-used": "2020"
             },
             {
+              "group-name": "Containers, hypervisors & virtualisation",
               "name": "LibPod / Podman",
               "level": "1",
               "years": "1",
               "last-used": "2019"
             },
             {
+              "group-name": "Containers, hypervisors & virtualisation",
               "name": "LXC",
               "level": "1",
               "years": "1",
               "last-used": "2014"
             },
             {
+              "group-name": "Containers, hypervisors & virtualisation",
               "name": "Solaris Zones",
               "level": "1",
               "years": "1",
               "last-used": "2014"
             },
             {
+              "group-name": "Containers, hypervisors & virtualisation",
               "name": "XEN",
               "level": "3",
               "years": "3",
               "last-used": "2014"
             },
             {
+              "group-name": "Containers, hypervisors & virtualisation",
               "name": "Qemu/KVM",
               "level": "3",
               "years": "2",
               "last-used": "2014"
             },
             {
+              "group-name": "Containers, hypervisors & virtualisation",
               "name": "Oracle VM",
               "level": "3",
               "years": "3",
@@ -355,23 +364,97 @@
           "group-name": "Distributed data stores & relational databases",
           "technologies": [
             {
-              "name": "Docker",
-              "level": "5",
-              "years": "5",
-              "last-used": "2020"
-            },
-            {
-              "name": "Docker Swarm",
-              "level": "5",
+              "group-name": "Distributed data stores & relational databases",
+              "name": "Cassandra",
+              "level": "4",
               "years": "3",
               "last-used": "2019"
             },
             {
-              "name": "Kubernetes",
+              "group-name": "Distributed data stores & relational databases",
+              "name": "Kafka",
               "level": "4",
               "years": "3",
               "last-used": "2020"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "Druid",
+              "level": "4",
+              "years": "3",
+              "last-used": "2019"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "ElasticSearch",
+              "level": "3",
+              "years": "1",
+              "last-used": "2020"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "Apache Solr",
+              "level": "2",
+              "years": "2",
+              "last-used": "2016"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "MongoDB",
+              "level": "3",
+              "years": "4",
+              "last-used": "2019"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "CouchDB",
+              "level": "2",
+              "years": "2",
+              "last-used": "2014"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "Berkeley DB",
+              "level": "1",
+              "years": "1",
+              "last-used": "2012"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "MySQL",
+              "level": "5",
+              "years": "10",
+              "last-used": "2019"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "PostgreSQL",
+              "level": "2",
+              "years": "1",
+              "last-used": "2019"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "Oracle DB",
+              "level": "2",
+              "years": "3",
+              "last-used": "2014"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "MS SQL Server",
+              "level": "2",
+              "years": "4",
+              "last-used": "2019"
+            },
+            {
+              "group-name": "Distributed data stores & relational databases",
+              "name": "DB2",
+              "level": "2",
+              "years": "5",
+              "last-used": "2014"
             }
+            
           ]
         }
       ],
