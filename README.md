@@ -3,34 +3,30 @@ run `git clone https://github.com/efio-dk/resume-cli.git`
 
 followed by `npm link`
 
-verify setup with `resume-cli`
+Test installation by running `resume-cli -h`
+
+## Prerequisites
+A `.json` file containing data
+
+A `.docx` file acting as a template for the final document
+
 
 ## Usage
 run `resume-cli -h` to view the help section
 
-and `resume-cli <command> -h` for specific information about a command
+### Generate a docx file
+run `resume-cli generate --resume <path> --template <path> --destination <path>`
+
+where `--resume` is a path to the `.json` file
+
+where `--template` is a path to the `.docx` template file
+
+where `--destination` is a path to the desired output destination for the final document
 
 
-## For developers - DOCX Generation
-add a javascript file to `resume-cli\docx-theme\partials`
+### Validate a json file against a json schema
+run `resume-cli validate --resume <path> --schema <path>`
 
-add a entry to the `resume-cli\docx-theme\partials\index.js` with the newly created javascript file to export it
+where `--resume` is a path to the `.json` file containing the data
 
-```javascript
-module.exports = {
-    fileName: require("./fileName"),
-}
-```
-
-add the following snippet and populate the document
-```javascript
-const docx = require("docx")
-
-module.exports = () => {
-    const doc = new docx.Document();
-
-    return doc;
-}
-```
-
-run `node . test partialName` to generate a docx file
+where `--schema` is a path to the `.json` file containing the schema
