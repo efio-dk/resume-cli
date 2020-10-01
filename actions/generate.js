@@ -8,7 +8,6 @@ const PizZip = require('pizzip');
 module.exports = (resumePath, templatePath, destination) => {
   
     var content = fs.readFileSync(path.resolve(process.cwd(), templatePath), 'binary');
-    console.log("asd")
     const json = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), resumePath)));
     var zip = new PizZip(content);
 
@@ -82,4 +81,6 @@ module.exports = (resumePath, templatePath, destination) => {
         const buffer = doc.getZip().generate({type: 'nodebuffer'});
         fs.writeFileSync(path.join(process.cwd(), destination), buffer);
     });
+
+    console.log("success")
 }
