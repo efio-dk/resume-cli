@@ -1,3 +1,6 @@
+# resume-cli
+A CLI tool to populate a docx template with the data inside a json file
+
 ## Setup / Install
 run `git clone https://github.com/efio-dk/resume-cli.git`
 
