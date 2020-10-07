@@ -45,4 +45,4 @@ where `<outputDirectory>` is the path to the directory where the final output is
 ### Case 2: Data and template resides in attached volume
 run `docker run --rm -v "<outputDirectory>:/app/data" resume-cli generate --resume data/<dataFile>.json --template data/<templateFile>.docx --destination data/output.docx`
 
-where `<outputDirectory>` is the path to the directory where the final output is supposed to saved
+where `<outputDirectory>` is the path to the directory where the final output is supposed to saved 
