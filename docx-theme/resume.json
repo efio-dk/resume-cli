@@ -47,9 +47,9 @@
         }
       ],
       "company-details": {
-        "picture": "https://efio.dk/images/efio-nav-logo-wide.png",
+        "logo": "https://efio.dk/images/efio-nav-logo-wide.png",
         "address": "Kronprinsensgade 6B",
-        "zipcode": "DK-1114",
+        "zipcode": "1114",
         "city": "Copenhagen",
         "cvr": "38578251",
         "email": "cv@efio.dk",
