@@ -11,5 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: one-liner script
-        run: echo Hello from 'push' action
+      - name: Setup dependencies
+        run: npm install
+      
+      - name: Build with 'node'
+        run: node .
