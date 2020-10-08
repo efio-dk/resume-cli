@@ -1,0 +1,15 @@
+name: feature-push
+
+on:
+  push:
+    branches: [ feature/*, features/* ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: setup .NET Core
+        - run: echo Hello from 'push' action
