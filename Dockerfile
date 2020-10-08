@@ -6,4 +6,4 @@ RUN npm install
 COPY . /app
 WORKDIR /app
 
-ENTRYPOINT [ "node", "." ]
+#ENTRYPOINT [ "node", "." ]
