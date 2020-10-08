@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: setup .NET Core
+      - name: one-liner script
         run: echo Hello from 'push' action
