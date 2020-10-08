@@ -14,5 +14,5 @@ jobs:
       - name: Setup dependencies
         run: npm install
       
-      - name: Build with 'node'
-        run: node .
+      - name: Test with 'jest'
+        run: npm test
