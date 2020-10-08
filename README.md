@@ -1,6 +1,14 @@
 # resume-cli
 A CLI tool to populate a docx template with the data inside a json file
 
+
+## Master branch
+[![Actions Status](https://github.com/efio-dk/resume-cli/workflows/master-pull-request/badge.svg)](https://github.com/efio-dk/resume-cli/actions)
+
+## Latest feature branch
+[![Actions Status](https://github.com/efio-dk/resume-cli/workflows/feature-push/badge.svg)](https://github.com/efio-dk/resume-cli/actions)
+
+
 ## Setup / Install
 run `git clone https://github.com/efio-dk/resume-cli.git`
 
@@ -45,4 +53,4 @@ where `<outputDirectory>` is the path to the directory where the final output is
 ### Case 2: Data and template resides in attached volume
 run `docker run --rm -v "<outputDirectory>:/app/data" resume-cli generate --resume data/<dataFile>.json --template data/<templateFile>.docx --destination data/output.docx`
 
-where `<outputDirectory>` is the path to the directory where the final output is supposed to saved
+where `<outputDirectory>` is the path to the directory where the final output is supposed to saved 
