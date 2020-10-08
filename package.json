@@ -7,7 +7,7 @@
     "resume-cli": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
     "pizzip": "^3.0.6",
     "z-schema": "^4.2.3",
     "z-schema-errors": "^0.2.1"
+  },
+  "devDependencies": {
+    "jest": "^26.5.2"
   }
 }
