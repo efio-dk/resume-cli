@@ -10,6 +10,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Run a one-line script
-        run: echo Hello from 'pull-request' action
+      
+      - name: Setup dependencies
+        run: npm install
+      
+      - name: Test with 'jest'
+        run: npm test
