@@ -1,5 +1,5 @@
 # resume-cli
-A CLI tool to populate a docx template with the data inside a json file
+A CLI tool to populate a docx template with the data inside a json file 
 
 
 ## Master branch
