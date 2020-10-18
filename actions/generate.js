@@ -53,6 +53,15 @@ function getDocumentOptions() {
         parser: (tag) => {
             return {
                 get(scope, context) {
+                    /*
+                    console.log("---- TAG ----")
+                    console.log(tag)
+                    console.log("---- SCOPE ----")
+                    console.log(scope);
+                    console.log("---- CONTEXT ----")
+                    console.log(context);
+                    */
+
                     if (tag === "$index") {
                         const indexes = context.scopePathItem;
                         return indexes[indexes.length - 1];
@@ -69,9 +78,84 @@ function getDocumentOptions() {
                             context.scopePathItem[context.scopePathItem.length - 1];
                         return index === 0;
                     }
+                    
+                    // Insert "," after every item in the array, except the last one
+                    if(tag === "$cs") {
+                        const totalLength = context.scopePathLength[context.scopePathLength.length - 1];
+                        const index = context.scopePathItem[context.scopePathItem.length - 1];
+                        if(index !== totalLength - 1) {
+                            return ",";
+                        }
+                        else {
+                            return "";
+                        }
+                    }
+
+                    // Insert "year" or "years" based on the array value
+                    if(tag === "$years") {
+                        if(typeof scope === "number" || typeof scope === "string"){
+                            if(scope === 1 || scope === "1"){
+                                return "year"
+                            }
+                            else {
+                                return "years";
+                            }
+                        }
+                        else if(typeof scope === "object"){
+                            var value = scope[Object.keys(scope)[context.num]]
+                            if(value === 1 || value === "1") {
+                                return "year"
+                            }
+                            else {
+                                return "years"
+                            }
+                        }
+                    }
+
+                    // Returns the year from a date in the format [yyyy-mm-dd]
+                    // !="¤="!#¤"!??????? FIX THIS
+                    if(tag === "startDate") {
+                        console.log("---- TAG ----")
+                        //console.log(tag)
+                        console.log("---- SCOPE ----")
+                        //console.log(scope);
+                        console.log("---- CONTEXT ----")
+                        console.log(context);
+                    }
+
+                    // Returns only the first name of a full name
+                    if(tag.includes("$firstName ")) {
+                        tag = tag.replace("$firstName ", "");
+                        var name = scope[tag].trim();
+                        return name.split(" ")[0];
+                    }
+
+                    // Abbreviates all names between first and last into initials
+                    if(tag.includes("$abbreviateMiddleNames ")) {
+                        tag = tag.replace("$abbreviateMiddleNames ", "");
+                        var name = scope[tag].trim();
+                        var splits = name.split(" ");
+                        if(splits.length < 3) { return "Name is not long enough to abbreviate" }
+
+                        var newName = "";
+                        for(var i = 0; i < splits.length; i++) {
+                            var value = splits[i];
+                            if(i === 0 || i === splits.length - 1){
+                                newName = newName + value + " ";
+                            }
+                            else {
+                                newName = newName + value[0].toUpperCase() + ". ";
+                            }
+                        }
+
+                        return newName;
+                    }
+
+
                     if (tag === '.') {
                         return scope;
                     }
+
                     return scope[tag];
                 },
             };
@@ -99,7 +183,7 @@ function getImageModule() {
     opts.getSize = function (img, tagValue, tagName) {
         //return [100, 115];
         if (tagName === "profile") return [100, 125];
-        if(tagName === "logo") return [100, 50];
+        if(tagName === "logo") return [118, 55];
         console.log(tagValue, tagName);
         // img is the value that was returned by getImage
         // This is to force the width to 600px, but keep the same aspect ratio

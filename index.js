@@ -26,7 +26,7 @@ cmd
     .command("generate")
     .description("generate a resume in the docx format")
     .option("--resume <relativePath>", "path to resume json file", "docx-theme/resume.json")
-    .option("--template <relativePath>", "path to the desired docx template", "docx-theme/template.docx")
+    .option("--template <relativePath>", "path to the desired docx template", "docx-theme/template2.docx")
     .option("--destination <relativePath>", "path to the desired output location", "output.docx")
     .action((options) => {
         actions.generate(options.resume, options.template, options.destination);

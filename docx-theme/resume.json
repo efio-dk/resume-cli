@@ -9,7 +9,17 @@
       "email": "kristian@efio.dk",
       "phone": "+45 5376 7138",
       "website": "https://efio.dk",
-      "summary": "Senior DevOps Consultant at Efio.\nKristian has worked as a full-time professional in software development since 2007, of which\nthe latest 5 years have been focused on DevOps-enabling technologies.\nKristian helps his clients build a strong DevOps culture in their organizations, building\ndocumented and self-documenting systems, as well as instructing both developers and\noperations, in the principles of automation done right.\nKristian started his career as a backend software developer, however always with a strong\nfocus on difficult subjects involving database performance. This led him to work exclusively\nas an expert on relational and NoSQL databases for a number of years.\nToday Kristian calls himself a site reliability engineer, specializing in keeping large sites\navailable and performant. However, not forgetting his roots, still loving to setup and tweak\ndistributed data stores. And not least, make all systems a bliss for developers to work with\nand deploy to.",
+      "summary": "Senior DevOps Consultant at Efio. Kristian has worked as a full-time professional in software development since 2007, of which the latest 5 years have been focused on DevOps-enabling technologies. Kristian helps his clients build a strong DevOps culture in their organizations, building documented and self-documenting systems, as well as instructing both developers and operations, in the principles of automation done right. Kristian started his career as a backend software developer, however always with a strong focus on difficult subjects involving database performance. This led him to work exclusively as an expert on relational and NoSQL databases for a number of years. Today Kristian calls himself a site reliability engineer, specializing in keeping large sites available and performant. However, not forgetting his roots, still loving to setup and tweak distributed data stores. And not least, make all systems a bliss for developers to work with and deploy to.",
+      "summary2": [
+        "Senior DevOps Consultant at Efio.",
+        "Kristian has worked as a full-time professional in software development since 2007, of which the latest 5 years have been focused on DevOps-enabling technologies.",
+        "",
+        "Kristian helps his clients build a strong DevOps culture in their organizations, building documented and self-documenting systems, as well as instructing both developers and operations, in the principles of automation done right.",
+        "",
+        "Kristian started his career as a backend software developer, however always with a strong focus on difficult subjects involving database performance. This led him to work exclusively as an expert on relational and NoSQL databases for a number of years.",
+        "",
+        "Today Kristian calls himself a site reliability engineer, specializing in keeping large sites available and performant. However, not forgetting his roots, still loving to setup and tweak distributed data stores. And not least, make all systems a bliss for developers to work with and deploy to."
+      ],
       "title": "Senior DevOps Engineer and container specialist",
       "header": "'s area of expertise covers",
       "area-expertise": [
