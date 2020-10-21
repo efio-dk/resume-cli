@@ -33,6 +33,17 @@ cmd
     });
 
 
+// COMMAND: convert
+cmd
+    .command("convert")
+    .description("convert a docx document to the pdf format")
+    .option("--document <relativePath>", "path to docx document file", "output.docx")
+    .option("--destination <relativePath>", "path to the desired output location", "output.pdf")
+    .action((options) => {
+        actions.convert(options.document, options.destination);
+    });
+
+
 
 // EXPOSE PROCESS ARGUEMENTS FOR THE COMMANDER MODULE
 cmd.parse(process.argv);

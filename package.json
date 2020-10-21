@@ -21,10 +21,13 @@
   },
   "homepage": "https://github.com/efio-dk/resume-cli#readme",
   "dependencies": {
+    "@nativedocuments/docx-wasm": "^2.2.13-1561490777",
+    "cloudmersive-convert-api-client": "^2.5.7",
     "commander": "^6.0.0",
     "docxtemplater": "^3.19.6",
     "docxtemplater-image-module-free": "^1.1.1",
     "image-size": "^0.9.1",
+    "libreoffice-convert-win": "^1.1.1",
     "pizzip": "^3.0.6",
     "z-schema": "^4.2.3",
     "z-schema-errors": "^0.2.1"
