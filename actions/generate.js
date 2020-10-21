@@ -88,12 +88,12 @@ function getDocumentOptions() {
                     // Returns the year from a date in the format [yyyy-mm-dd]
                     // !="¤="!#¤"!??????? FIX THIS
                     if(tag === "startDate") {
-                        console.log("---- TAG ----")
+                        //console.log("---- TAG ----")
                         //console.log(tag)
-                        console.log("---- SCOPE ----")
+                        //console.log("---- SCOPE ----")
                         //console.log(scope);
-                        console.log("---- CONTEXT ----")
-                        console.log(context);
+                        //console.log("---- CONTEXT ----")
+                        //console.log(context);
                     }
 
                     // Returns only the first name of a full name
