@@ -63,12 +63,6 @@ function returnFirstName(tag, scope, context) {
 }
 
 function abbreviateMiddleNames(tag, scope, context) {
-    console.log("---- TAG ----")
-                    console.log(tag)
-                    console.log("---- SCOPE ----")
-                    console.log(scope);
-                    console.log("---- CONTEXT ----")
-                    console.log(context);
     tag = tag.replace("$abbreviateMiddleNames ", "");
     var name = scope[tag].trim();
     var splits = name.split(" ");

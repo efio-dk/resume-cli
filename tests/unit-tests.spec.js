@@ -3,7 +3,54 @@ const { returnFirstName } = require("../parserUtility");
 const { abbreviateMiddleNames } = require("../parserUtility");
 
 describe("TestYearYears", () => {
-    test("It should change from years to year, if its singular", () => {
+    test("It should return year", () => {
+        var tag = '$years'
+        var scope = {
+                        'group-name':'Distributed data stores & relational databases',
+                        name:'DB2',
+                        level:'2',
+                        years:'1',
+                        'last-used':'2014'
+                    }
+        var context = {
+            num: 3,
+            meta: {
+              part: {
+                type: 'placeholder',
+                value: '$years',
+                offset: 670,
+                endLindex: 1442,
+                lIndex: 1442
+              }
+            },
+            scopeList: [
+              {
+                basics: [Object],
+                work: [Array],
+                education: [Object],
+                skills: [Object]
+              },
+              { 'technical-skills': [Array], 'working-areas': [Array] },
+              {
+                'group-name': 'Distributed data stores & relational databases',
+                technologies: [Array]
+              },
+              {
+                'group-name': 'Distributed data stores & relational databases',
+                name: 'DB2',
+                level: '2',
+                years: '1',
+                'last-used': '2014'
+              }
+            ],
+            resolved: undefined,
+            scopePath: [ 'skills', 'technical-skills', 'technologies' ],
+            scopePathItem: [ 0, 1, 12 ],
+            scopePathLength: [ 1, 2, 13 ]
+          }
+        expect("year").toEqual(returnYearOrYears(tag,scope,context));
+    })
+    test("It should return years", () => {
         var tag = '$years'
         var scope = {
                         'group-name':'Distributed data stores & relational databases',
