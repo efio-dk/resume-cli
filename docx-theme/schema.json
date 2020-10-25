@@ -1,0 +1,128 @@
+ {
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "name": { "type": "string" },
+        "label": { "type": "string" },
+        "picture": { "type": "string" },
+        "born": { "type": "string" },
+        "resume-version": { "type": "string" },
+        "it-experience": { "type": "string" },
+        
+        "summary": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "title": { "type": "string" },
+                "paragraphs": { 
+                    "type": "array" ,
+                    "additionalItems": false,
+                    "items": { "type": "string" }
+                },
+                "area-expertise": { 
+                    "type": "array" ,
+                    "additionalItems": false,
+                    "items": { "type": "string" }
+                }
+            }
+        },
+
+        "company-details": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "logo": { "type": "string" },
+                "address": { "type": "string" },
+                "zipcode": { "type": "string" },
+                "city": { "type": "string" },
+                "cvr": { "type": "string" },
+                "email": { "type": "string" },
+                "phonenumber": { "type": "string" }
+            }
+        },
+
+        "working-areas": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": { "type": "string" },
+                    "level": { "type": "integer" },
+                    "years": { "type": "integer" },
+                    "last-used": { "type": "integer" }
+                }
+            }
+        },
+
+        "technical-skills": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "group-name": { "type": "string" },
+                    "technologies": {
+                        "type": "array",
+                        "additionalItems": false,
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "group-name": { "type": "string" },
+                                "name": { "type": "string" },
+                                "level": { "type": "string" },
+                                "years": { "type": "string" },
+                                "last-used": { "type": "string" }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "projects": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "company": { "type": "string" },
+                    "position": { "type": "string" },
+                    "projects": {
+                        "type": "array",
+                        "additionalItems": false,
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "date": { "type": "string" },
+                                "headline": { "type": "string" },
+                                "summary": { "type": "string" },
+                                "highlights": {
+                                    "type": "array",
+                                    "additionalItems": false,
+                                    "items": { "type": "string" }
+                                },
+                                "tools": {
+                                    "type": "array",
+                                    "additionalItems": false,
+                                    "items": { "type": "string" }
+                                },
+                                "roles": {
+                                    "type": "array",
+                                    "additionalItems": false,
+                                    "items": { "type": "string" }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
