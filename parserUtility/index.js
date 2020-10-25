@@ -78,6 +78,6 @@ function abbreviateMiddleNames(tag, scope, context) {
             newName = newName + value[0].toUpperCase() + ". ";
         }
     }
-
+    console.log(newName)
     return newName;
 }

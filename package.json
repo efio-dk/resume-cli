@@ -33,6 +33,7 @@
     "z-schema-errors": "^0.2.1"
   },
   "devDependencies": {
-    "jest": "^26.5.2"
+    "jest": "^26.5.2",
+    "mocha": "^8.2.0"
   }
 }

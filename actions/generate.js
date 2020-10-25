@@ -85,7 +85,20 @@ function getDocumentOptions() {
                         return parserHelpers.returnYearOrYears(tag, scope, context);
                     }
 
+<<<<<<< HEAD
                     
+=======
+                    // Returns the year from a date in the format [yyyy-mm-dd]
+                    // !="¤="!#¤"!??????? FIX THIS
+                    if(tag === "startDate") {
+                        //console.log("---- TAG ----")
+                        //console.log(tag)
+                        //console.log("---- SCOPE ----")
+                        //console.log(scope);
+                        //console.log("---- CONTEXT ----")
+                        //console.log(context);
+                    }
+>>>>>>> aa44e6e0425dc223d09adf15a2b159e9f20641ce
 
                     // Returns only the first name of a full name
                     if(tag.includes("$firstName ")) {
