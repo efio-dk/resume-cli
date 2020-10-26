@@ -36,7 +36,7 @@
   "languages": [
   "danish",
   "english"
-  ]
+  ],
   "working-areas": [
     {
       "name": "Application containerization",
@@ -451,8 +451,8 @@
             "DevOps engineer", "Site reliability engineer", "Cloud architect"
           ]
         }
-      ]
-       "education": {
+      ],
+      "education": {
         "educations-and-courses": [
           {
             "institution": "Lyngby Uddannelses Center",
