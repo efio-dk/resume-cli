@@ -460,44 +460,37 @@
             "institution": "Lyngby Uddannelses Center",
             "area": "Computer science",
             "studyType": "Associate degree (Datamatiker)",
-            "startDate": "2007-05-01",
-            "endDate": "2011-06-01",
-            "gpa": "10.2"
+            "date": "2007-05-01 - 2011-06-01"
           },
           {
             "institution": "IBM",
             "area": "DB2 PureXML",
             "studyType": "Mastery test",
-            "startDate": "2010-06-01",
-            "endDate": "2010-06-02"
+            "date": "2010-06-01 - 2010-06-02"
           },
           {
             "institution": "Technical University of Denmark",
             "area": "DTU Mainframe",
             "studyType": "course",
-            "startDate": "2010-02-01",
-            "endDate": "2010-06-30"
+            "date": "2010-02-01 - 2010-06-30"
           },
           {
             "institution": "Pearson Vue",
             "area": "Certified Oracle Linux",
             "studyType": "implementaion specialist",
-            "startDate": "2014-06-01",
-            "endDate": "2014-06-30"
+            "date": "2014-06-01 - 2014-06-30"
           },
           {
             "institution": "Amazon Web Services",
             "area": "AWS technical professional",
             "studyType": "Accreditation",
-            "startDate": "2014-06-01",
-            "endDate": "2014-06-30"
+            "date": "2014-06-01 - 2014-06-30"
           },
           {
             "institution": "MongoDB",
             "area": "MongoDB for DBAs",
             "studyType": "(m102)",
-            "startDate": "2015-04-01",
-            "endDate": "2015-04-30"
+            "date": "2015-04-01 - 2015-04-30"
           }
         ],
         "conferences": [
