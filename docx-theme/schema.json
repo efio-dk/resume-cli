@@ -139,12 +139,31 @@
                 "educations-and-courses": { 
                     "type": "array" ,
                     "additionalItems": false,
-                    "items": { "type": "string" }
-                },
+                    "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "institution": { "type": "string" },
+                                "area": { "type": "string" },
+                                "studyType": { "type": "string" },
+                                "date": { "type": "string" }
+                       }
+                    }
+                 },
                 "conferences": { 
                     "type": "array" ,
                     "additionalItems": false,
-                    "items": { "type": "string" }
+                    "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "title": { "type": "string" },
+                                "date": { "type": "string" },
+                                "location": { "type": "string" },
+                                
+                       
+                        }
+                    }
                 }
             }
         }
