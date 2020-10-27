@@ -1,4 +1,4 @@
- {
+{
     "$schema": "http://json-schema.org/schema#",
     "type": "object",
     "additionalProperties": false,
@@ -131,7 +131,7 @@
             }
         },
      
-      "education": {
+        "education": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -139,32 +139,30 @@
                     "type": "array" ,
                     "additionalItems": false,
                     "items": {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                                "institution": { "type": "string" },
-                                "area": { "type": "string" },
-                                "studyType": { "type": "string" },
-                                "date": { "type": "string" }
-                       }
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "institution": { "type": "string" },
+                            "area": { "type": "string" },
+                            "studyType": { "type": "string" },
+                            "date": { "type": "string" }
+                        }
                     }
-                 },
+                },
                 "conferences": { 
                     "type": "array" ,
                     "additionalItems": false,
                     "items": {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                                "title": { "type": "string" },
-                                "date": { "type": "string" },
-                                "location": { "type": "string" },
-                                
-                       
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "title": { "type": "string" },
+                            "date": { "type": "string" },
+                            "location": { "type": "string" }
                         }
                     }
                 }
             }
         }
     }
- }
+}
