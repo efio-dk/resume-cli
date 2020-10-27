@@ -129,6 +129,24 @@
                     }
                 }
             }
+        },
+     
+      "education": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "title": { "type": "string" },
+                "educations-and-courses": { 
+                    "type": "array" ,
+                    "additionalItems": false,
+                    "items": { "type": "string" }
+                },
+                "conferences": { 
+                    "type": "array" ,
+                    "additionalItems": false,
+                    "items": { "type": "string" }
+                }
+            }
         }
     }
  }
